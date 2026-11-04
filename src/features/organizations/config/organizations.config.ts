@@ -1,0 +1,83 @@
+import type { FeatureDefinition } from '@/types/module';
+export const organizationsConfig: FeatureDefinition = {
+  key: 'organizations',
+  title: 'Organizations',
+  group: 'Platform',
+  description: 'Your healthcare network at a glance.',
+  fields: [
+    {
+      key: 'name',
+      label: 'Organization name',
+      type: 'text',
+      required: true,
+    },
+    {
+      key: 'type',
+      label: 'Business type',
+      type: 'select',
+      options: [
+        'General Clinic',
+        'Aesthetic Clinic',
+        'Dermatology Clinic',
+        'Dental Clinic',
+        'Hospital',
+        'Diagnostic Laboratory',
+        'Multi-Specialty Center',
+        'Physiotherapy Center',
+        'Other Healthcare Facility',
+      ],
+      required: false,
+    },
+    {
+      key: 'email',
+      label: 'Email',
+      type: 'email',
+      required: false,
+    },
+    {
+      key: 'phone',
+      label: 'Phone',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'address',
+      label: 'Address',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'country',
+      label: 'Country',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'registration',
+      label: 'Registration number',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'plan',
+      label: 'Subscription',
+      type: 'select',
+      options: ['Starter', 'Professional', 'Business', 'Enterprise'],
+      required: false,
+    },
+    {
+      key: 'expiry',
+      label: 'Subscription expiry',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'status',
+      label: 'Status',
+      type: 'select',
+      options: ['Active', 'Trial', 'Inactive'],
+      required: false,
+    },
+  ],
+  columns: ['name', 'type', 'email', 'phone'],
+};

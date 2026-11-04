@@ -1,0 +1,86 @@
+import type { FeatureDefinition } from '@/types/module';
+export const aestheticConfig: FeatureDefinition = {
+  key: 'aesthetic',
+  title: 'Aesthetics',
+  group: 'Specialties',
+  description: 'Treatment packages, sessions and private demo photography.',
+  fields: [
+    {
+      key: 'patient',
+      label: 'Patient',
+      type: 'text',
+      relation: 'patients',
+      required: true,
+    },
+    {
+      key: 'doctor',
+      label: 'Practitioner',
+      type: 'text',
+      relation: 'staff',
+      required: false,
+    },
+    {
+      key: 'name',
+      label: 'Treatment / package',
+      type: 'text',
+      required: true,
+    },
+    {
+      key: 'skin',
+      label: 'Skin type & concerns',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'preferences',
+      label: 'Patient preferences',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'sessions',
+      label: 'Total sessions',
+      type: 'number',
+      required: false,
+    },
+    {
+      key: 'completed',
+      label: 'Completed sessions',
+      type: 'number',
+      required: false,
+    },
+    {
+      key: 'cost',
+      label: 'Package price',
+      type: 'number',
+      required: false,
+    },
+    {
+      key: 'expiry',
+      label: 'Package expiry',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'followup',
+      label: 'Next session',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'status',
+      label: 'Status',
+      type: 'select',
+      options: ['Planned', 'In Progress', 'Completed'],
+      required: false,
+    },
+    {
+      key: 'notes',
+      label: 'Notes',
+      type: 'textarea',
+      required: false,
+    },
+  ],
+  columns: ['patient', 'doctor', 'name', 'skin'],
+  specialty: 'Aesthetic Clinic',
+};

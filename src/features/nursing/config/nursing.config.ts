@@ -1,0 +1,80 @@
+import type { FeatureDefinition } from '@/types/module';
+export const nursingConfig: FeatureDefinition = {
+  key: 'nursing',
+  title: 'Nursing station',
+  group: 'Clinical',
+  description: 'Assigned care, observations and shift handovers.',
+  fields: [
+    {
+      key: 'patient',
+      label: 'Patient',
+      type: 'text',
+      relation: 'patients',
+      required: true,
+    },
+    {
+      key: 'doctor',
+      label: 'Practitioner',
+      type: 'text',
+      relation: 'staff',
+      required: false,
+    },
+    {
+      key: 'date',
+      label: 'Date',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'ward',
+      label: 'Ward / bed',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'task',
+      label: 'Task',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'vitals',
+      label: 'Vital observations',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'medication',
+      label: 'Medication administration (demo)',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'checklist',
+      label: 'Care checklist',
+      type: 'textarea',
+      required: false,
+    },
+    {
+      key: 'shift',
+      label: 'Shift',
+      type: 'select',
+      options: ['Morning', 'Evening', 'Night'],
+      required: false,
+    },
+    {
+      key: 'status',
+      label: 'Status',
+      type: 'select',
+      options: ['Pending', 'In Progress', 'Completed'],
+      required: false,
+    },
+    {
+      key: 'notes',
+      label: 'Notes',
+      type: 'textarea',
+      required: false,
+    },
+  ],
+  columns: ['patient', 'doctor', 'date', 'ward'],
+};

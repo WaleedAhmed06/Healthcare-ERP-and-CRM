@@ -1,0 +1,98 @@
+import type { FeatureDefinition } from '@/types/module';
+export const patientsConfig: FeatureDefinition = {
+  key: 'patients',
+  title: 'Patients',
+  group: 'Workspace',
+  description: 'Every patient. One connected health record.',
+  fields: [
+    {
+      key: 'name',
+      label: 'Full name',
+      type: 'text',
+      required: true,
+    },
+    {
+      key: 'dob',
+      label: 'Date of birth',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'gender',
+      label: 'Gender',
+      type: 'select',
+      options: ['Female', 'Male', 'Other'],
+      required: false,
+    },
+    {
+      key: 'phone',
+      label: 'Phone',
+      type: 'tel',
+      required: false,
+    },
+    {
+      key: 'email',
+      label: 'Email',
+      type: 'email',
+      required: false,
+    },
+    {
+      key: 'address',
+      label: 'Address',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'emergency',
+      label: 'Emergency contact',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'blood',
+      label: 'Blood group',
+      type: 'select',
+      options: ['A+', 'A−', 'B+', 'B−', 'AB+', 'AB−', 'O+', 'O−'],
+      required: false,
+    },
+    {
+      key: 'category',
+      label: 'Patient category',
+      type: 'select',
+      options: ['New', 'Returning', 'Regular', 'VIP', 'Corporate', 'Referred'],
+      required: false,
+    },
+    {
+      key: 'allergies',
+      label: 'Allergies',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'history',
+      label: 'Medical history',
+      type: 'textarea',
+      required: false,
+    },
+    {
+      key: 'referral',
+      label: 'Referral source',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'status',
+      label: 'Status',
+      type: 'select',
+      options: ['Active', 'Inactive'],
+      required: false,
+    },
+    {
+      key: 'notes',
+      label: 'Notes',
+      type: 'textarea',
+      required: false,
+    },
+  ],
+  columns: ['name', 'dob', 'gender', 'phone'],
+};

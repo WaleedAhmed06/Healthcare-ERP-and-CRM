@@ -1,0 +1,85 @@
+import type { FeatureDefinition } from '@/types/module';
+export const plansConfig: FeatureDefinition = {
+  key: 'plans',
+  title: 'Treatment plans',
+  group: 'Clinical',
+  description: 'Care plans, scheduled sessions and measurable progress.',
+  fields: [
+    {
+      key: 'patient',
+      label: 'Patient',
+      type: 'text',
+      relation: 'patients',
+      required: true,
+    },
+    {
+      key: 'doctor',
+      label: 'Practitioner',
+      type: 'text',
+      relation: 'staff',
+      required: false,
+    },
+    {
+      key: 'name',
+      label: 'Plan name',
+      type: 'text',
+      required: true,
+    },
+    {
+      key: 'procedures',
+      label: 'Procedures',
+      type: 'textarea',
+      required: false,
+    },
+    {
+      key: 'sessions',
+      label: 'Total sessions',
+      type: 'number',
+      required: false,
+    },
+    {
+      key: 'completed',
+      label: 'Completed sessions',
+      type: 'number',
+      required: false,
+    },
+    {
+      key: 'cost',
+      label: 'Treatment cost',
+      type: 'number',
+      required: false,
+    },
+    {
+      key: 'date',
+      label: 'Date',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'expiry',
+      label: 'Expiry date',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'followup',
+      label: 'Next session / follow-up',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'status',
+      label: 'Status',
+      type: 'select',
+      options: ['Planned', 'In Progress', 'Completed', 'Paused'],
+      required: false,
+    },
+    {
+      key: 'notes',
+      label: 'Notes',
+      type: 'textarea',
+      required: false,
+    },
+  ],
+  columns: ['patient', 'doctor', 'name', 'procedures'],
+};

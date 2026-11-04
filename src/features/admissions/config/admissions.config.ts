@@ -1,0 +1,81 @@
+import type { FeatureDefinition } from '@/types/module';
+export const admissionsConfig: FeatureDefinition = {
+  key: 'admissions',
+  title: 'Inpatient & beds',
+  group: 'Specialties',
+  description: 'Admissions, wards, bed transfers and discharge.',
+  fields: [
+    {
+      key: 'patient',
+      label: 'Patient',
+      type: 'text',
+      relation: 'patients',
+      required: true,
+    },
+    {
+      key: 'doctor',
+      label: 'Practitioner',
+      type: 'text',
+      relation: 'staff',
+      required: false,
+    },
+    {
+      key: 'date',
+      label: 'Date',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'reason',
+      label: 'Admission reason',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'ward',
+      label: 'Ward',
+      type: 'select',
+      options: ['General', 'Private', 'ICU', 'Maternity', 'Pediatric', 'Emergency'],
+      required: false,
+    },
+    {
+      key: 'bed',
+      label: 'Bed number',
+      type: 'text',
+      required: false,
+    },
+    {
+      key: 'discharge',
+      label: 'Discharge date',
+      type: 'date',
+      required: false,
+    },
+    {
+      key: 'summary',
+      label: 'Discharge summary',
+      type: 'textarea',
+      required: false,
+    },
+    {
+      key: 'instructions',
+      label: 'Discharge instructions',
+      type: 'textarea',
+      required: false,
+    },
+    {
+      key: 'status',
+      label: 'Status',
+      type: 'select',
+      options: ['Admitted', 'Discharged'],
+      required: false,
+    },
+    {
+      key: 'notes',
+      label: 'Notes',
+      type: 'textarea',
+      required: false,
+    },
+  ],
+  columns: ['patient', 'doctor', 'date', 'reason'],
+  specialty: 'Hospital',
+};
