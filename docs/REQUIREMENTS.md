@@ -32,4 +32,6 @@ This checklist is conservative. Record CRUD is not a completed specialized workf
 
 Static deployment: `pnpm export` generates `out/` with HTML, client assets and all configured feature routes. The standard server build remains available through `pnpm build`. Static export retains the browser demo's existing security and workflow limitations.
 
+Branding: the shared login/sidebar logo loads directly from the hosted ProcessIQTech image URL without requiring a Next.js image optimization server.
+
 The six required end-to-end scenarios are not yet signed off. General clinic operations exist individually. Aesthetic scheduling/photo persistence, guided dental plans, emergency-to-discharge journey, formatted laboratory reports and complete financial breakdowns remain outstanding.

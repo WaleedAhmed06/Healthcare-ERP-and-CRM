@@ -10,7 +10,8 @@ export function BrandLogo({ className, onDark = false }: BrandLogoProps) {
   return (
     <div className={cn('w-full max-w-64', onDark && 'rounded-lg bg-white px-3 py-3', className)}>
       <Image
-        src="/branding/processiqtech.png"
+        src="https://processiqtech.com/assets/logo1-B0hYff3J.png"
+        unoptimized
         alt="ProcessIQTech"
         width={923}
         height={207}
