@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[529],{529:(e,t,n)=>{n.r(t),n.d(t,{default:()=>a});var s=n(12728),i=n(95506),r=n(32613);let u=(0,n(27978).v)("patients");function a(){return(0,s.jsx)(i.v,{definition:r.L,repository:u})}}}]);

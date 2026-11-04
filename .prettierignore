@@ -1,5 +1,6 @@
 node_modules
 .next
+out
 pnpm-lock.yaml
 coverage
 next-env.d.ts

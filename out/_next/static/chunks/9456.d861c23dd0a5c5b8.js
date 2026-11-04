@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9456],{69456:(e,n,t)=>{t.r(n),t.d(n,{default:()=>a});var i=t(12728),r=t(95506),s=t(58857);let u=(0,t(27978).v)("organizations");function a(){return(0,i.jsx)(r.v,{definition:s.h,repository:u})}}}]);

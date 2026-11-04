@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8652],{58652:(e,n,r)=>{r.r(n),r.d(n,{default:()=>a});var s=r(12728),t=r(95506),u=r(9557);let i=(0,r(27978).v)("branches");function a(){return(0,s.jsx)(t.v,{definition:u.L,repository:i})}}}]);

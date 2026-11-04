@@ -23,6 +23,14 @@ pnpm start
 
 Webpack is used because Turbopack worker-port initialization is restricted in the authoring environment. This is a standard Next.js App Router application.
 
+To generate a static deployment folder like `out/`, run:
+
+```sh
+pnpm export
+```
+
+The generated folder contains `index.html`, `404.html`, `_next/` assets and a directory with `index.html` for each route (such as `dashboard/`, `patients/` and `staff/`). Serve `out/` with a static web host over HTTP; `pnpm start` is for the regular `pnpm build` output. `out/` is generated and ignored by Git. This export contains the existing fictional-data browser demo; it does not provide a backend.
+
 ## Structure
 
 ```text

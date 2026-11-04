@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[879],{30879:(e,n,t)=>{t.r(n),t.d(n,{default:()=>f});var r=t(12728),i=t(95506),s=t(42101);let u=(0,t(27978).v)("inventory");function f(){return(0,r.jsx)(i.v,{definition:s.B,repository:u})}}}]);

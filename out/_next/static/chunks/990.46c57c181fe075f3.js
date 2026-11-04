@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[990],{78609:(e,t,i)=>{i.r(t),i.d(t,{default:()=>a});var r=i(12728),s=i(95506),n=i(59241);let u=(0,i(27978).v)("pediatrics");function a(){return(0,r.jsx)(s.v,{definition:n.X,repository:u})}}}]);

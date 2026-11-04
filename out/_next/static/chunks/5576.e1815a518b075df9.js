@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5576],{95576:(e,n,r)=>{r.r(n),r.d(n,{default:()=>c});var t=r(12728),s=r(95506),u=r(30379);let i=(0,r(27978).v)("emergency");function c(){return(0,t.jsx)(s.v,{definition:u.m,repository:i})}}}]);

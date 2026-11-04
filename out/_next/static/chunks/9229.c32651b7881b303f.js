@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9229],{99229:(e,t,n)=>{n.r(t),n.d(t,{default:()=>c});var s=n(12728),u=n(95506),r=n(82349);let i=(0,n(27978).v)("documents");function c(){return(0,s.jsx)(u.v,{definition:r.H,repository:i})}}}]);

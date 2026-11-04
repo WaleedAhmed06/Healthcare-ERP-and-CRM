@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4544],{64544:(e,t,r)=>{r.r(t),r.d(t,{default:()=>a});var n=r(12728),s=r(95506),u=r(65579);let i=(0,r(27978).v)("theatre");function a(){return(0,n.jsx)(s.v,{definition:u.U,repository:i})}}}]);

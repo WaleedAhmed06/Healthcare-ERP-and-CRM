@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1028],{91028:(e,t,r)=>{r.r(t),r.d(t,{default:()=>o});var n=r(12728),s=r(95506),u=r(63235);let i=(0,r(27978).v)("optometry");function o(){return(0,n.jsx)(s.v,{definition:u.y,repository:i})}}}]);

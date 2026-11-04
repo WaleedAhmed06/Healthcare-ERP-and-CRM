@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7361],{27361:(e,i,n)=>{n.r(i),n.d(i,{default:()=>c});var s=n(12728),t=n(95506),r=n(4581);let u=(0,n(27978).v)("invoices");function c(){return(0,s.jsx)(t.v,{definition:r.B,repository:u})}}}]);

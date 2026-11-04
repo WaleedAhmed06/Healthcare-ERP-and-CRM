@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev --webpack --hostname 127.0.0.1",
     "build": "next build --webpack",
+    "export": "NEXT_STATIC_EXPORT=true pnpm build",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --max-warnings=0",

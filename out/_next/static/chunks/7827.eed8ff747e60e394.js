@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7827],{97827:(e,s,t)=>{t.r(s),t.d(s,{default:()=>c});var i=t(12728),n=t(95506),r=t(94349);let u=(0,t(27978).v)("subscriptions");function c(){return(0,i.jsx)(n.v,{definition:r.x,repository:u})}}}]);
